@@ -1,0 +1,136 @@
+.container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #04152d;
+  
+    
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #ff7a18;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .iconBox {
+    background: #04152d;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .iconBox:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .iconBox:hover .icon {
+    transform: rotate(5deg) scale(1.1);
+  }
+  
+  
+  .html { color: #e44d26; }
+  .css { color: #264de4; }
+  .js { color: #f0db4f; }
+  .react { color: #61dbfb; }
+  .node { color: #68a063; }
+  .express { color: #ffffff; }
+  .mongo { color: #4db33d; }
+  .tailwind { color: #38bdf8; }
+  .bootstrap { color: #7952b3; }
+
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.12);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #04152d;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #ff7a18;
+    margin-bottom: 2rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .iconBox {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    
+  }
+  
+  .iconBox:hover {
+    animation: bounce 0.5s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    animation: pulse 3s infinite ease-in-out;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .iconBox:hover .icon {
+    transform: rotate(10deg) scale(1.15);
+  }
+  
+  
+  .html { color: #e44d26; }
+  .css { color: #264de4; }
+  .js { color: #f0db4f; }
+  .react { color: #61dbfb; }
+  .node { color: #68a063; }
+  .express { color: #ffffff; }
+  .mongo { color: #4db33d; }
+  .tailwind { color: #38bdf8; }
+  .bootstrap { color: #7952b3; }
+  
+  

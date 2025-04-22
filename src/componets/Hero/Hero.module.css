@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  
+  .content {
+    max-width: 600px;
+  }
+  
+  .title {
+    
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff7a18, #af002d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .descrption {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #fff;
+  }
+  
+  .contactBtn {
+  
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+  
+  .heroImage {
+    width: 600px;
+    height: auto;
+  
+    /* floating animation */
+    animation: float 4s ease-in-out infinite;
+    /* optional: make it smooth when paused */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Pause the float and slightly scale up on hover */
+  .heroImage:hover {
+    animation-play-state: paused;
+    transform: scale(1.05);
+  }
+  
+  /* Keyframes for a gentle up‑and‑down float */
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(2deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+  
+  
+  .topBlur,
+  .bottomBlur {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(100px);
+  }
+  
+  .topBlur {
+    top: -100px;
+    right: -100px;
+    background: #ff7a18;
+  }
+  
+  .bottomBlur {
+    bottom: -100px;
+    left: -100px;
+    background: #af002d;
+  }
+
+  @media screen and (max-width: 830px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .heroImage {
+      width: 80%;
+      max-width: 250px;
+      margin: 20px 0;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .descrption {
+      font-size: 1.2rem;
+    }
+  
+    .contactBtn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  
